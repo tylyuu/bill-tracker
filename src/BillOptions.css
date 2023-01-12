@@ -1,0 +1,25 @@
+.interval-option-container {
+    display: block;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .interval {
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-shadow: 1px 1px 1px gray;
+  }
+  .selected-interval {
+    text-shadow: 1px 1px 1px gray;
+    font-weight: 700;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+  }

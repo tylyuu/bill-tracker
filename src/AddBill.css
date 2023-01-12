@@ -1,0 +1,34 @@
+.add-bill-container {
+    display: block;
+    margin: auto;
+    width: 350px;
+    margin-bottom: 20px;
+  }
+  .add-bill-form-control {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+.currency-container {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.currency-form-control{
+    padding: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.select-box{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    display: block;
+    font-size: small;
+}

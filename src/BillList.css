@@ -1,0 +1,31 @@
+.bill-list-container {
+    margin: auto;
+    box-sizing: border-box;
+    width: 300px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+  }
+  .bill-list-row {
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+
+  }
+  .bill-list-row-content {
+    display: inline-block;
+  }
+  .edit-mode-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .edit-mode-btn:hover {
+    color: blue;
+  }
+
+  .category-title{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-style: inset;
+  }

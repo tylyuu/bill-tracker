@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React, { useContext, useState } from 'react';
+import AddBill from './AddBill';
 import './App.css';
+import BillChart from './MonthlyChart';
+import { BillContext } from './BillContext';
+import BillList from './BillList';
+import BillOptions from './BillOptions';
+import BillTotal from './BillTotal';
+import EditBills from './EditBills';
+import MonthlyChart from './MonthlyChart';
 
-function App() {
+const App = () => {
+
+  const { editModeEnabled } = useContext(BillContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bills-container'>
+      {
+        editModeEnabled ? <EditBills /> : <span><BillOptions /><AddBill /><BillTotal /><BillList /><MonthlyChart /></span>
+      }
     </div>
   );
 }
