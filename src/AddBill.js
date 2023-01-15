@@ -84,7 +84,7 @@ const AddBill = () => {
          </select>
          </div>
                   
-          <button className='add-bill-form-control btn btn-primary'
+          <button className='add-bill-form-control'
             onClick={() => {
                 if(billObjectValid()) {
                     updateBills({

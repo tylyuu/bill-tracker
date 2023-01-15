@@ -1,25 +1,30 @@
 .interval-option-container {
-    display: block;
     padding: 10px;
     margin: auto;
     text-align: center;
-    margin-bottom: 25px;
-  }
-  .interval {
-    font-weight: 400;
     font-size: 20px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    margin-right: 10px;
-    margin-left: 10px;
     text-shadow: 1px 1px 1px gray;
-  }
-  .selected-interval {
-    text-shadow: 1px 1px 1px gray;
-    font-weight: 700;
+    font-family: gill Sans, sans-serif;
+}
+.interval-option-container h4{
+    text-decoration: underline;
     font-size: 30px;
-    display: inline-block;
-    cursor: pointer;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
+}
+
+.interval-option-container h5{
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: underline;
+    color: blue;
+}
+
+.description-icon{
+    color: brown;
+
+}
+
+ 

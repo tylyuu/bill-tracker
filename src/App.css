@@ -1,10 +1,10 @@
 .bills-container {
   padding: 25px;
-  width: 700px;
+  width: 1000px;
   box-shadow: 2px 5px 20px gray;
   border-radius: 10px;
   margin: auto;
   margin-top: 100px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(241, 229, 208);
   box-sizing: border-box;
 }

@@ -20,11 +20,12 @@ const MonthlyChart = () => {
       
     const options = {
         backgroundColor: 'transparent',
+        is3D: true,
         legend: {
           position: 'bottom',
           alignment: 'center',
           textStyle: {
-              fontSize: 12
+              fontSize: 12,
           },        
       },
       border: {
@@ -38,6 +39,7 @@ const MonthlyChart = () => {
     return(
         <Chart
       chartType="PieChart"
+      title
       data={data}
       options={options}
       width={"100%"}

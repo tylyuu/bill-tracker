@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './BillTotal.css';
 import { BillContext } from './BillContext';
+import PaidIcon from '@mui/icons-material/Paid';
 
 const BillTotal = () => {
 
@@ -58,8 +59,9 @@ const BillTotal = () => {
     return (
       <>
         <div className='bill-total-container'>
-          {selectedCostInterval} bill cost:
+        <PaidIcon className='icon' />{selectedCostInterval} Total: </div>
           <br></br>
+        <div className='money'>
           <span className='total-cost'>
             {
               '$' + billTotal + ' | ' + 
@@ -68,9 +70,10 @@ const BillTotal = () => {
               '£'+ billGbp
             }
           </span>
-        </div>
-        <div className='total-saved-container'>
-          {selectedCostInterval} saved:
+          </div>
+        <div className='bill-save-container'>
+          <PaidIcon className='icon'/>{selectedCostInterval} Saved: </div>
+          <div className='money'>
           <br></br>
           <span className='total-saved'>
             {

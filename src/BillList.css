@@ -1,22 +1,33 @@
 .bill-list-container {
     margin: auto;
     box-sizing: border-box;
-    width: 300px;
+    width: 100%;
     font-family: "Lucida Console", "Courier New", monospace;
     font-weight: bold;
+    display: inline-flex;
+    align-items: start;
+    justify-content: center;
   }
-  .bill-list-row {
-    display: block;
-    font-family: "Times New Roman", Times, serif;
+  
+
+  .note{
+    font-family: gill Sans, sans-serif;
+    display: flex;
+    margin-left: 80px;
 
   }
   .bill-list-row-content {
     display: inline-block;
+    margin-left: 3px;
   }
   .edit-mode-btn {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
     cursor: pointer;
+    font-family: gill Sans, sans-serif;
+    font-size: 20px;
+    background-color: bisque;
+    border-radius: 5.5em;
+    margin-left: 80px;
   }
   .edit-mode-btn:hover {
     color: blue;
@@ -26,6 +37,45 @@
     display: inline-block;
     width: 200px;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-style: inset;
+    color: whitesmoke;
+  }
+  .grocery{
+    background-color: #1e1ee1;
+  }
+  .daily{
+    background-color: #ef5203;
+  }
+  .fashion{
+    background-color: orange;
+  }
+  .other{
+    background-color: green;
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    display: inline-flex;
+  }
+
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    background-color: blue;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
   }
