@@ -8,16 +8,23 @@
     color: red;
   }
   .edit-mode-done-btn {
+    margin-top: 20px;
     cursor: pointer;
+    font-family: gill Sans, sans-serif;
+    font-size: 20px;
+    background-color: bisque;
+    border-radius: 5.5em;
+    margin-left: 80px;
   }
   .edit-mode-done-btn:hover {
     color: blue;
   }
   .edit-bill-title {
+    font-family: gill Sans, sans-serif;
     width: 100px;
     display: inline-block;
   }
   .edit-bill-cost-input {
-    width: 200px;
-    display: inline-block;
+    font-family: gill Sans, sans-serif;
+    background-color: aliceblue;
   }

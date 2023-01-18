@@ -30,10 +30,10 @@ const BillProvider = ({children}) => {
 
     const editBill = (billToUpdate) => {
         const billsFiltered = bills.filter((bill) => bill.title !== billToUpdate.title);
-        const updatedBills = alphabeticalOrder([
+        const updatedBills = [
             ...billsFiltered,
             billToUpdate
-        ]); 
+        ]; 
         localStorage.setItem('portexe-bills', JSON.stringify(updateBills));
         setBills(updatedBills);
     };

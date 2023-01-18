@@ -5,9 +5,10 @@ import Select from 'react-select';
 
 
 const AddBill = () => {
-    const {  exchangeRate, currency } = useContext(BillContext);
+    const {  exchangeRate, currency, bills } = useContext(BillContext);
     const [newBillTitle, setNewBillTitle] = useState('');
     const [newBillCost, setNewBillCost] = useState('');
+    const [billDate, setbillDate] = useState('');
     
     const getInitialState = () => {
         const value = "Grocery";
@@ -47,6 +48,7 @@ const AddBill = () => {
     const clearForm = () => {
         setNewBillCost('');
         setNewBillTitle('');
+        setbillDate('');
     };
 
 
@@ -62,6 +64,11 @@ const AddBill = () => {
             type='number'
             value={newBillCost}
             onChange={(e) => setNewBillCost(e.target.value)}></input>
+          <input className='add-bill-form-control form-control'
+            placeholder='Enter the date in form month.date' 
+            type='number'
+            value={billDate}
+            onChange={(e) => setbillDate(e.target.value)}></input>
             <div className='select-box'>
           <span>Please select the bill category:</span>
           <select className='add-bill-form-control form-control'
@@ -92,9 +99,10 @@ const AddBill = () => {
                         monthlyCost: newBillCost*((JSON.parse(newCurrency))[1]),
                         category: newBillCategory,
                         currency: JSON.parse(newCurrency),
-                        newtotal: newCurrency[0],
+                        date: billDate,
                         enabled: true
                     });
+                    console.log(bills);
                     clearForm();
                 }
             }}>Add Bill</button>

@@ -30,14 +30,14 @@ const BillList = () => {
                                 onChange={() => editBill({
                                     title: bill.title,
                                     currency: bill.currency,
-                                    newtotal: bill.newtotal,
+                                    date: bill.date,
                                     monthlyCost: bill.monthlyCost,
                                     category: bill.category,
                                     enabled: !bill.enabled
                                 })}>
                             </input>
                             <div className='bill-list-row-content'>
-                                {bill.title}  ${bill.monthlyCost.toFixed(2)}
+                                {bill.title}  ${bill.monthlyCost.toFixed(2)} {bill.date}
                             </div>
                         </div>
                     );
@@ -56,14 +56,14 @@ const BillList = () => {
                                 onChange={() => editBill({
                                     title: bill.title,
                                     currency: bill.currency,
-                                    newtotal: bill.newtotal,
+                                    date: bill.date,
                                     monthlyCost: bill.monthlyCost,
                                     category: bill.category,
                                     enabled: !bill.enabled
                                 })}>
                             </input>
                             <div className='bill-list-row-content'>
-                                {bill.title}  ${bill.monthlyCost.toFixed(2)}
+                                {bill.title}  ${bill.monthlyCost.toFixed(2)} {bill.date}
                             </div>
                         </div>
                     );
@@ -82,14 +82,14 @@ const BillList = () => {
                                 onChange={() => editBill({
                                     title: bill.title,
                                     currency: bill.currency,
-                                    newtotal: bill.newtotal,
+                                    date: bill.date,
                                     monthlyCost: bill.monthlyCost,
                                     category: bill.category,
                                     enabled: !bill.enabled
                                 })}>
                             </input>
                             <div className='bill-list-row-content'>
-                                {bill.title}  ${bill.monthlyCost.toFixed(2)}
+                                {bill.title}  ${bill.monthlyCost.toFixed(2)} {bill.date}
                             </div>
                         </div>
                     );
@@ -107,14 +107,14 @@ const BillList = () => {
                                 onChange={() => editBill({
                                     title: bill.title,
                                     currency: bill.currency,
-                                    newtotal: bill.newtotal,
+                                    date: bill.date,
                                     monthlyCost: bill.monthlyCost,
                                     category: bill.category,
                                     enabled: !bill.enabled
                                 })}>
                             </input>
                             <div className='bill-list-row-content'>
-                                {bill.title}  ${bill.monthlyCost.toFixed(2)}
+                                {bill.title}  ${bill.monthlyCost.toFixed(2)} {bill.date}
                             </div>
                         </div>
                     );
