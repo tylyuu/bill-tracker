@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bill-tracker/static/css/main.a4e8d30b.css",
+    "main.js": "/bill-tracker/static/js/main.1ca36330.js",
+    "static/js/787.b172fa1e.chunk.js": "/bill-tracker/static/js/787.b172fa1e.chunk.js",
+    "index.html": "/bill-tracker/index.html",
+    "main.a4e8d30b.css.map": "/bill-tracker/static/css/main.a4e8d30b.css.map",
+    "main.1ca36330.js.map": "/bill-tracker/static/js/main.1ca36330.js.map",
+    "787.b172fa1e.chunk.js.map": "/bill-tracker/static/js/787.b172fa1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4e8d30b.css",
+    "static/js/main.1ca36330.js"
+  ]
+}
